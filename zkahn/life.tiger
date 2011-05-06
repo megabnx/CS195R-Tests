@@ -4,8 +4,8 @@ let type aint = array of int
 	var cur := aint2[10] of x 
 	var next := aint2[10] of x 
 	var temp := aint2[10] of x
-	var height := 10
-	var width := 10
+	var height := 9
+	var width := 9
 	
 	function isAlive(grid:aint2, x1:int, y1:int):int = 
 		if x1 >= 0 & x1 < width & y1 >= 0 & y1 < height & grid[x1][y1]=1 then 1 else 0 
@@ -45,7 +45,7 @@ let type aint = array of int
 	cur[2][4] := 1;
 	cur[1][4] := 1;
 	cur[0][3] := 1;
-	for i:= 1 to 10 do (
+	for i:= 1 to 20 do (
 		printgrid(cur);
 		nextGen(cur, next);
 		temp := next;
